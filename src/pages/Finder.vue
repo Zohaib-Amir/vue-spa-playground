@@ -10,7 +10,7 @@ const router = useRouter();
 
 const { isDark, toggleDark, theme } = useTheme();
 
-const { data, isLoading, isError } = useApi({
+const { data, isLoading, isError, error } = useApi({
   queryFn: searchRestaurants,
 });
 
@@ -31,6 +31,7 @@ const handleSelectRestaurant = (id: string) => {
 };
 
 watchEffect(() => (selectedRestaurantId.value = idRouteParam()));
+watchEffect(() => console.error('error fetching data', error.value));
 </script>
 
 <template>
