@@ -1,7 +1,6 @@
 {
-  "name": "vitesome",
-  "version": "1.3.0",
-  "description": "A simple opinionated Vue3 Starter Template with Vite.js",
+  "name": "vuespa",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite --open --host",
     "build": "vue-tsc --noEmit && vite build",

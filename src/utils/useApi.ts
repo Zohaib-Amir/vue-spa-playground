@@ -1,5 +1,11 @@
 import { isRef, Ref, ref, watchEffect } from 'vue';
 
+/**
+ *
+ * A simple loading state manager based on Tanstack Query without caching and other fancy features
+ *
+ */
+
 export function useApi<T extends (...args: any[]) => any>({
   queryFn,
   params,

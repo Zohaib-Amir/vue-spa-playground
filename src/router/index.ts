@@ -5,10 +5,6 @@ const routes: RouteRecordRaw[] = [
     path: '/:id?',
     component: () => import('/@/pages/Finder.vue'),
   },
-  {
-    path: '/home',
-    component: () => import('/@/pages/Index.vue'),
-  },
 ];
 
 export const Router = createRouter({
