@@ -1,3 +1,19 @@
 # Vue SPA
 
-Use `pnpm` to to manage dependencies
+Install dependencies
+
+```
+pnpm install
+```
+
+Create Build
+
+```
+npm run build
+```
+
+Serve the app
+
+```
+npm run serve
+```
