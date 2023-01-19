@@ -10,10 +10,10 @@ import { Router } from '/@/router';
 
 import { Theme, themeKey } from './data/theme';
 
-if (process.env.NODE_ENV === 'development') {
-  const { start } = await import('./mocks/worker');
-  start();
-}
+// if (process.env.NODE_ENV === 'development') {
+const { start } = await import('./mocks/worker');
+start();
+// }
 
 const theme: Theme = {
   light: {
