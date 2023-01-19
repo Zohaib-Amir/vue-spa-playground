@@ -4,16 +4,14 @@ import 'uno.css';
 
 import App from './App.vue';
 import './styles/base.css';
+import { start } from './mocks/worker';
 
 // Router
 import { Router } from '/@/router';
 
 import { Theme, themeKey } from './data/theme';
 
-if (process.env.NODE_ENV) {
-  const { start } = await import('./mocks/worker');
-  start();
-}
+start();
 
 const theme: Theme = {
   light: {
